@@ -28,7 +28,7 @@ a {
   background-color: darkslategrey;
   color: white;
   border-radius: 8px;
-  font-size: 18px;
+  font-size: 20px;
   margin: 5px;
   font-family: monospace, sans-serif;
 }
@@ -52,4 +52,37 @@ a:hover {
 .author {
   font-family: 'Crimson Text', serif;
   font-size: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 800px) {
+  .quote {
+    font-size: calc(1.4em + 1vw);
+  }
+}
+
+@media (min-width: 600px) {
+  .wrapper {
+    padding-top: 4rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .wrapper {
+    padding-top: 6rem;
+  }
+  .quote {
+    font-size: calc(2.5em + 1vw);
+  }
+  .author {
+    font-size: 2rem;
+  }
+  a {
+    font-size: 24px;
+  }
 }
